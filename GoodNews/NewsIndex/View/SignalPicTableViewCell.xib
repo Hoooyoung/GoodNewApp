@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="95" id="KGk-i7-Jjw" customClass="SignalPicTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="328" height="95"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="328" height="94.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="p4m-0f-Qvr">
+                        <rect key="frame" x="10" y="15" width="86" height="64.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="p4m-0f-Qvr" secondAttribute="height" multiplier="4:3" id="mwI-Aq-QFd"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="moB-4o-ZgZ">
+                        <rect key="frame" x="106" y="15" width="212" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="放假了开始就弗兰克的家乐福会计师的看法记录打卡设计费禄口街道酸辣粉简单来说" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w4C-7v-i6a">
+                        <rect key="frame" x="106" y="39.5" width="212" height="41"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="41" id="KkW-6e-j3h"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yjW-OJ-Mcn">
+                        <rect key="frame" x="106" y="93.5" width="222" height="1"/>
+                        <color key="backgroundColor" red="0.8784313725490196" green="0.8784313725490196" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="SOz-a7-tFO"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="moB-4o-ZgZ" secondAttribute="trailing" constant="10" id="5gN-A2-8n2"/>
+                    <constraint firstItem="moB-4o-ZgZ" firstAttribute="leading" secondItem="p4m-0f-Qvr" secondAttribute="trailing" constant="10" id="5i2-48-Ise"/>
+                    <constraint firstItem="yjW-OJ-Mcn" firstAttribute="leading" secondItem="w4C-7v-i6a" secondAttribute="leading" id="HYd-6T-Qxj"/>
+                    <constraint firstAttribute="trailing" secondItem="yjW-OJ-Mcn" secondAttribute="trailing" id="UT9-TO-PLL"/>
+                    <constraint firstAttribute="bottom" secondItem="yjW-OJ-Mcn" secondAttribute="bottom" id="VV7-2l-Ztz"/>
+                    <constraint firstItem="moB-4o-ZgZ" firstAttribute="top" secondItem="p4m-0f-Qvr" secondAttribute="top" id="XZh-Or-XME"/>
+                    <constraint firstAttribute="trailing" secondItem="w4C-7v-i6a" secondAttribute="trailing" constant="10" id="f1r-Yn-InU"/>
+                    <constraint firstItem="w4C-7v-i6a" firstAttribute="top" secondItem="moB-4o-ZgZ" secondAttribute="bottom" constant="5" id="mfw-1w-Wa6"/>
+                    <constraint firstItem="p4m-0f-Qvr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="mwv-ae-CT7"/>
+                    <constraint firstItem="p4m-0f-Qvr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="o1Z-dN-3CM"/>
+                    <constraint firstAttribute="bottom" secondItem="p4m-0f-Qvr" secondAttribute="bottom" constant="15" id="rEe-WE-aHn"/>
+                    <constraint firstItem="w4C-7v-i6a" firstAttribute="leading" secondItem="moB-4o-ZgZ" secondAttribute="leading" id="vdy-R8-IUq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bigTiltle" destination="moB-4o-ZgZ" id="cXo-yU-O9I"/>
+                <outlet property="contentText" destination="w4C-7v-i6a" id="ZIz-LG-8tC"/>
+                <outlet property="newsPicView" destination="p4m-0f-Qvr" id="0Hy-B6-u1r"/>
+            </connections>
+            <point key="canvasLocation" x="67.200000000000003" y="76.011994002998506"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,35 @@
+//
+//  PrefixHeader.pch
+//  GoodNews
+//
+//  Created by Stefan on 2019/2/21.
+//  Copyright © 2019年 Vanguard. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import <MJRefresh.h>
+#import "NetWorks.h"
+#import <MJExtension.h>
+#import <UIImageView+WebCache.h>
+#import <SVProgressHUD.h>
+
+//URL
+#define BaseUrl [NSString stringWithFormat:@"http://c.m.163.com/"]
+#define BaseUrl_Pic [NSString stringWithFormat:@"http://api.budejie.com/api/api_open.php"]
+
+//FRAME
+#define kScreenW ([UIScreen mainScreen].bounds.size.width)
+#define kScreenH ([UIScreen mainScreen].bounds.size.height)
+#define IS_IPHONEX  ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
+#define NAVI_HEIGHT (IS_IPHONEX?88:64)
+#define TABBAR_H (IS_IPHONEX?83:49)
+
+//COLOR
+#define RGB(a,b,c) [UIColor colorWithRed:a/255.f green:b/255.f blue:c/255.f alpha:1.0]
+#define RGB_ALPHA(a,b,c,d) [UIColor colorWithRed:a/255.f green:b/255.f blue:c/255.f alpha:d]
+#define THEME_COLOR RGB(250,102,97)
+
+#endif /* PrefixHeader_pch */
+
